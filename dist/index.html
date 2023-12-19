@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/56a4b8eed4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="output.css">
+    <title>MovieFlix App</title>
+</head>
+<style>
+    body {
+        background: #121212;
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="pt-10" id="root">
+        <div class="flex justify-center items-center">
+            <h2 class="text-[#FF0000] text-center font-bold text-3xl  md:text-4xl">MovieFlix</h2>
+        </div>
+        <div class="p-3 mt-10 flex md:justify-evenly flex-col justify-between md:flex-row items-center">
+
+            <div class="flex justify-center flex-col items-center">
+                <img src="img/Shopaholics Bust.svg" class="md:w-72 w-52 h-auto" alt="">
+                <h1 class="md:hidden m-5 block text-white font-bold text-3xl">
+                    Let's Move in!
+                </h1>
+            </div>
+            <div class="p-2 flex flex-col justify-center items-center">
+                <div>
+
+                </div>
+                <form class="flex flex-col items-center justify-between">
+                    <div>
+
+                        <input type="email" id="email_field" placeholder="Email"
+                            class="p-4 mb-3 px-8 rounded-xl bg-[#2F2A2A] border border-[#423D3D] focus:outline-none focus:border-[#FF0000]">
+                    </div>
+                    <div>
+                        <input type="password" id="pass_field" placeholder="Password"
+                            class="p-4 px-8 rounded-xl bg-[#2F2A2A] border border-[#423D3D] focus:outline-none focus:border-[#FF0000]">
+                    </div>
+                    <button onclick="loggedIn()" class="p-4 rounded-xl bg-[#FF0000] mt-4 text-white font-semibold px-[6.2rem]">Sign
+                        In</button>
+                </form>
+                <div class="p-2">
+                    <div>
+                        <p class="text-[#423D3D] font-semibold text-sm text-center m-7">Or continue with..</p>
+                    </div>
+                    <div class="flex mt-5 justify-between  items-center">
+                        <div>
+                            <button  onclick="loginbtn()" id="loginBtn" class="px-3 py-3 border pt-3 border-[#423D3D]  rounded-xl" ><i class="fa-brands fa-google fa-xl" style="color: #ff0000;"></i></button>  
+                      
+                        </div>
+
+                        <div>
+                          <button onclick="loginbtn()" id="loginBtn" class="px-3 py-3 border pt-3 border-[#423D3D]  rounded-xl" ><i class="fa-brands fa-facebook fa-xl" style="color: #ff0000;"></i></button>  
+                        </div>
+
+                        <div>
+                            <button  onclick="loginbtn()" id="loginBtn" class="px-3 py-3 border pt-3 border-[#423D3D]  rounded-xl" > <i class="fa-brands fa-apple fa-2xl" style="color: #ff0000;"></i></button>  
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
